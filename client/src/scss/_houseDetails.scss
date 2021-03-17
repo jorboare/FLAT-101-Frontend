@@ -1,0 +1,40 @@
+.house-details{
+
+    &-img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2{
+        display: block;
+        font-size: 60px;
+        font-weight: 100;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        background-color: grey;
+        color: white;
+    }
+
+    h3{
+        margin-top: 30px;
+    }
+
+    p{
+        font-weight: 100;
+    }
+
+    &-price{
+        font-size: 50px;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .detail-btn{
+        text-align: center;
+        margin-bottom: 50px;
+   }
+
+
+}

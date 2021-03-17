@@ -4,7 +4,7 @@ const House = require('./../models/product.model')
 
 
 // All Houses
-router.get('/', (req, res) => {
+router.get('/houses', (req, res) => {
 
     House
         .find()
@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 
 //Get One House Details
 
-router.get('/:id', (req, res) => {
+router.get('/houses/:id', (req, res) => {
 
     const houseID = req.params.id
 
@@ -27,7 +27,7 @@ router.get('/:id', (req, res) => {
 
 //Add New House
 
-router.post('/', (req, res) => {
+router.post('/new', (req, res) => {
 
     const house = req.body
 

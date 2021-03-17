@@ -1,0 +1,29 @@
+
+
+.new-house-form{
+    margin-top: 50px;
+
+    h2{
+        font-weight: 100;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    span{
+        color: grey
+    }
+}
+
+.form-error{
+    width: 100%;
+    background-color: rgb(181, 52, 52);
+    border-collapse: separate;
+    color: #ffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.form-btn{
+width: 100%
+}

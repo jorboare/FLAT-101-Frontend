@@ -1,0 +1,44 @@
+@import 'config' ,'navbar', 'houseCard', 'houseForm', 'houseDetails';
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+//Buttons
+
+.btn{
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 15px;
+
+        &-edit {
+            background-color: rgb(230, 230, 230);
+
+              &:hover {
+                 background-color: rgb(201, 201, 201);
+
+            }
+        }
+
+        &-delete {
+            background-color: rgb(230, 230, 230);
+
+            &:hover {
+                background-color: rgb(245, 149, 149);
+
+            }
+            
+        }
+        &-back {
+            background-color: rgb(230, 230, 230);
+            width: 100%;
+            margin: 15px 0 50px 0; 
+
+            &:hover {
+                background-color: rgb(245, 149, 149);
+
+            }
+        }
+}

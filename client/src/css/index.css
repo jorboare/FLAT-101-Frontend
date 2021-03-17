@@ -1,1 +1,170 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: relative;
+  border-bottom: 1px solid grey;
+}
+
+.navbar__title {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  top: 12px;
+  left: 20px;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.house-col {
+  margin-top: 30px;
+}
+
+.house-col a {
+  text-decoration: none;
+  color: black;
+}
+
+.house-col a :hover {
+  text-decoration: none;
+}
+
+.house-col img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.house-col h1 {
+  font-weight: 100;
+}
+
+.house-col h5 {
+  font-weight: 100;
+  color: #727272;
+}
+
+.new-house-form {
+  margin-top: 50px;
+}
+
+.new-house-form h2 {
+  font-weight: 100;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.new-house-form span {
+  color: grey;
+}
+
+.form-error {
+  width: 100%;
+  background-color: #b53434;
+  border-collapse: separate;
+  color: #ffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.form-btn {
+  width: 100%;
+}
+
+.house-details-img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.house-details h2 {
+  display: block;
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+.house-details h3 {
+  margin-top: 30px;
+}
+
+.house-details p {
+  font-weight: 100;
+}
+
+.house-details-price {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.house-details .detail-btn {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.btn-edit {
+  background-color: #e6e6e6;
+}
+
+.btn-edit:hover {
+  background-color: #c9c9c9;
+}
+
+.btn-delete {
+  background-color: #e6e6e6;
+}
+
+.btn-delete:hover {
+  background-color: #f59595;
+}
+
+.btn-back {
+  background-color: #e6e6e6;
+  width: 100%;
+  margin: 15px 0 50px 0;
+}
+
+.btn-back:hover {
+  background-color: #f59595;
+}
+/*# sourceMappingURL=index.css.map */

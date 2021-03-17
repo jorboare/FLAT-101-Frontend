@@ -37,10 +37,11 @@ const HouseDetails = () => {
             {houseDetails.name !== undefined ?
                 <Row>
                     <Col md={12}>
+                        <div className='house-detail-img-container'>
+                            <img src={houseDetails.img} alt='house' className='house-details-img' />
+                            <h2>{houseDetails.name}</h2>
+                        </div>
 
-                        <img src={houseDetails.img} alt='house' className='house-details-img' />
-
-                        <h2>{houseDetails.name}</h2>
 
                         <h3>Sobre {houseDetails.name}:</h3>
 

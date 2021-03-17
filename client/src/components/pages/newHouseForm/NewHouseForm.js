@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Container, Row, Col, Button } from 'react-bootstrap'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import HouseService from '../../../service/house.service'
 
 const houseService = new HouseService()
@@ -93,6 +93,7 @@ const EditHouseForm = (props) => {
                         {error.status ? <p className='form-error'>{error.msg}</p> : null}
 
                         <Button type='submit' variant='dark' className='form-btn'>Añadir</Button>
+                        <Link to='/houses' variant='dark' className='btn btn-back'>Cancelar</Link>
                     </Form>
                 </Col>
             </Row>

@@ -1,20 +1,31 @@
 .house-details{
 
-    &-img {
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-    }
 
-    h2{
-        display: block;
-        font-size: 60px;
-        font-weight: 100;
-        text-transform: uppercase;
-        width: 100%;
-        text-align: center;
-        background-color: grey;
-        color: white;
+    .house-detail-img-container{
+        position: relative;
+        height: 460px;
+            width: 100%;
+
+        img {
+            height: 460px;
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        h2{
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            height: 70px;
+            display: block;
+            font-size: 60px;
+            font-weight: 100;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(43, 40, 40, 0.7);
+            color: white;
+        }
     }
 
     h3{

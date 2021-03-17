@@ -94,21 +94,31 @@
   width: 100%;
 }
 
-.house-details-img {
-  height: 400px;
+.house-details .house-detail-img-container {
+  position: relative;
+  height: 460px;
+  width: 100%;
+}
+
+.house-details .house-detail-img-container img {
+  height: 460px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.house-details h2 {
+.house-details .house-detail-img-container h2 {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 70px;
   display: block;
   font-size: 60px;
   font-weight: 100;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-  background-color: grey;
+  background-color: rgba(43, 40, 40, 0.7);
   color: white;
 }
 
@@ -129,6 +139,18 @@
 .house-details .detail-btn {
   text-align: center;
   margin-bottom: 50px;
+}
+
+.houses-container {
+  margin: 30px;
+}
+
+.houses-container h2 {
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 body {
@@ -166,5 +188,24 @@ body {
 
 .btn-back:hover {
   background-color: #f59595;
+}
+
+.btn-newHouse {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-newHouse:hover {
+  background-color: #dfdfdf;
+  width: 280px;
+  padding: 15px 0;
 }
 /*# sourceMappingURL=index.css.map */

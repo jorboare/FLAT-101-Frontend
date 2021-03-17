@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 import HouseService from '../../../service/house.service'
 import HouseCard from './../houseCard/HouseCard'
 import { Container, Row } from 'react-bootstrap'
@@ -22,7 +23,9 @@ const ProductsList = () => {
 
     return (
         <>
-            <Container className='houses-container'>
+            <Container className='houses-container' style={{ 'marginBottom': "50px" }}>
+                <h2>Nuestras casas</h2>
+                <Link to='/newhouse' className='btn btn-newHouse'>Añadir una casa</Link>
                 <Row>
                     {houses.map(elm =>
                     (

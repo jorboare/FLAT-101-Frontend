@@ -23,10 +23,10 @@ const ProductsList = () => {
 
     return (
         <>
-            <Container className='houses-container' style={{ 'marginBottom': "50px" }}>
+            <Container className='houses-container'>
                 <h2>Nuestras casas</h2>
                 <Link to='/newhouse' className='btn btn-newHouse'>Añadir una casa</Link>
-                <Row>
+                <Row className='justify-content-center'>
                     {houses.map(elm =>
                     (
                         <HouseCard key={elm._id} {...elm} />

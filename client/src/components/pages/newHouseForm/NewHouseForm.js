@@ -93,7 +93,7 @@ const EditHouseForm = (props) => {
                         {error.status ? <p className='form-error'>{error.msg}</p> : null}
 
                         <Button type='submit' variant='dark' className='form-btn'>Añadir</Button>
-                        <Link to='/houses' variant='dark' className='btn btn-back'>Cancelar</Link>
+                        <Link to='/' variant='dark' className='btn btn-back'>Cancelar</Link>
                     </Form>
                 </Col>
             </Row>

@@ -11,7 +11,7 @@ const HouseCard = ({ name, price, img, _id }) => {
 
     return (
 
-        <Col md={4} className='house-col'>
+        <Col md={4} lg={4} className='house-col'>
             <Link to={`/detail/${_id}`}>
                 <div className='img-container'>
 

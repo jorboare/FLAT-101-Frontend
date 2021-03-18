@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/newHouse" exact render={props => <NewHouseForm />} />
-        <Route path="/houses" exact render={() => <HousesList />} />
+        <Route path="/" exact render={() => <HousesList />} />
         <Route path="/detail/:id" exact render={() => <HouseDetails />} />
         <Route path="/edit/:id" exact render={() => <EditHouseForm />} />
 

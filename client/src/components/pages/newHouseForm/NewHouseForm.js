@@ -53,7 +53,7 @@ const EditHouseForm = (props) => {
         houseService
             .newHouse(newHouse)
             .then(res =>
-                history.push('/houses')
+                history.push('/')
             )
             .catch(err => console.log(err))
 

@@ -14,11 +14,11 @@ const NewHouseForm = () => {
     const [houseInfo, sethouseInfo] = useState({})
 
     useEffect(() => {
-        houseService.
-            getHouseDetails(params.id)
+        houseService
+            .getHouseDetails(params.id)
             .then(res => sethouseInfo(res.data))
             .catch(err => console.log(err))
-    }, [])
+    }, [params.id])
 
     //State
     const [error, setError] = useState({

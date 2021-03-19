@@ -12,11 +12,13 @@ const HouseDetails = () => {
     const [houseDetails, setHouseDetails] = useState({})
 
     useEffect(() => {
-        houseService.
-            getHouseDetails(params.id)
+        houseService
+            .getHouseDetails(params.id)
             .then(res => setHouseDetails(res.data))
             .catch(err => console.log(err))
-    }, [])
+
+        //eslint-disable-next-line
+    }, [params.id])
 
     function numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -26,9 +28,9 @@ const HouseDetails = () => {
     //Eliminar Casa
 
     function deleteHouse() {
-        houseService.
-            delete(params.id)
-            .then(res => history.push('/houses'))
+        houseService
+            .delete(params.id)
+            .then(res => history.push('/'))
             .catch(err => console.log(err))
     }
 
